@@ -1,0 +1,300 @@
+/* Plsss dont try read my code its very confusing even to me myself, i just wanted every thing work, so this is a very messy code. still aspiring to be a better programmer i'll do better next time🚀🚀 */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  background-color: var(--main-bg1);
+  color: var(--White-text1);
+  font-family: "League Spartan", sans-serif;
+  transition: 0.3s;
+}
+
+:root {
+  /* Theme 1 */
+  --main-bg1: hsl(222, 26%, 31%);
+  --toggle-bg1: hsl(223, 31%, 20%);
+  --scrn-bg1: hsl(224, 36%, 15%);
+  --text1: hsl(221, 14%, 31%);
+  --White-text1: hsl(0, 0%, 100%);
+  --keys1-bg: #252d44;
+  --keys1-shad: hsl(224, 28%, 35%);
+  --key1-btn-tg: hsl(6, 63%, 50%);
+  --btn1-shad: hsl(6, 70%, 34%);
+  --small1-keys-bg: hsl(30, 25%, 89%);
+  --small1-keys-shad: hsl(29, 16%, 65%);
+  --del-reset: #637198;
+  /* Theme 2 */
+  --main-bg2: hsl(0, 0%, 90%);
+  --toggle-bg2: hsl(0, 5%, 81%);
+  --scrn-bg2: hsl(0, 0%, 93%);
+  --text2: hsl(60, 10%, 19%);
+  --White-text2: hsl(0, 0%, 100%);
+  --keys2-bg: #d3cdcd;
+  --keys2-shad: #ada39b;
+  --key2-btn-tg: hsl(25, 98%, 40%);
+  --btn2-shad: hsl(25, 99%, 27%);
+  --small2-keys-bg: hsl(45, 7%, 89%);
+  --small2-keys-shad: hsl(35, 11%, 61%);
+  --del-reset2: #388187;
+  /* Theme 3 */
+  --main-bg3: hsl(268, 75%, 9%);
+  --toggle-bg3: hsl(268, 71%, 12%);
+  --text3: hsl(52, 100%, 62%);
+  --scrn-bg3: #1e0836;
+  --sub-text3: hsl(198, 20%, 13%);
+  --white-text3: hsl(0, 0%, 100%);
+  --keys3-bg: #1e0836;
+  --keys3-shad: hsl(285, 91%, 52%);
+  --key3-btn-tg: hsl(176, 100%, 44%);
+  --btn3-shad: hsl(177, 92%, 70%);
+  --small3-keys-bg: hsl(268, 47%, 21%);
+  --small3-keys-shad: hsl(290, 70%, 36%);
+  --del-reset3: #56077c;
+  --testy: 100%;
+}
+
+main {
+  max-width: 400px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.first-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.first-sec h1 {
+  font-size: 25px;
+}
+#😁 {
+  font-size: 0.8rem;
+}
+/* THEME 1 TOGGLE BACKGROUND */
+.toggle-bg {
+  display: flex;
+  position: relative;
+  padding: 2px;
+  width: 50px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--toggle-bg1);
+}
+/* THEME 1 TOGGLE  */
+.toggle {
+  position: absolute;
+  top: 2px;
+  height: 80%;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--key1-btn-tg);
+  transition: 0.3s;
+}
+.tg-text {
+  display: flex;
+  gap: 25px;
+}
+
+.click {
+  width: var(--testy);
+  border-radius: 15px;
+}
+.click2 {
+  width: var(--testy);
+
+  border-radius: 15px;
+}
+.click3 {
+  width: var(--testy);
+  border-radius: 15px;
+}
+
+#num {
+  font-size: 10px;
+  position: absolute;
+  bottom: 25px;
+  font-weight: 600;
+  word-spacing: 15px;
+}
+/* THEME 1 INPUT  */
+input {
+  caret-color: #637198;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--scrn-bg1);
+  color: var(--White-text1);
+  font-size: 3rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  padding: 30px;
+  text-align: end;
+  box-shadow: 0px 0px 14px 2px rgba(31, 30, 30, 0.089);
+
+  border: none;
+}
+input::before {
+  content: "text";
+}
+input:focus {
+  outline: none;
+}
+
+.keys-container {
+  box-shadow: 0px 0px 14px 2px rgba(31, 30, 30, 0.089);
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  min-height: 335px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  background-color: var(--keys1-bg);
+  border-radius: 10px;
+  padding: 30px;
+}
+/* THEME 1 KEYS */
+.keys {
+  color: var(--text1);
+  font-size: 1.7rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--small1-keys-bg);
+  box-shadow: 0px 4px 0px 0px rgba(180, 165, 151, 1);
+}
+.reset,
+.equals {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.del-reset {
+  background-color: var(--del-reset);
+  color: var(--White-text1);
+  box-shadow: 0px 4px 0px 0px rgba(64, 78, 114, 1);
+}
+
+.equals {
+  background-color: var(--key1-btn-tg);
+  color: var(--White-text1);
+  box-shadow: 0px 4px 0px 0px var(--btn1-shad);
+}
+
+.hover:hover {
+  background-color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hover-2:hover {
+  background-color: hsla(6, 70%, 62%, 0.966);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hover-3:hover {
+  background-color: #788bbe;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+}
+
+.body-theme2 {
+  background-color: var(--main-bg2);
+  color: var(--text2);
+}
+
+.input-theme2 {
+  caret-color: var(--key2-btn-tg);
+  background-color: var(--scrn-bg2);
+  color: var(--text2);
+}
+
+.toggle-bg2 {
+  background-color: var(--toggle-bg2);
+}
+
+.toggle2 {
+  background-color: var(--key2-btn-tg);
+}
+.keys-bg-theme2 {
+  background-color: var(--keys2-bg);
+}
+.keys-theme2 {
+  color: var(--text2);
+}
+
+.del-reset2 {
+  background-color: var(--del-reset2);
+  box-shadow: 0px 4px 0px 0px #1d5c65;
+}
+.del-reset2:hover {
+  background-color: #6bb9be;
+}
+
+.equals2 {
+  background-color: var(--key2-btn-tg);
+  box-shadow: 0px 4px 0px 0px #863700;
+}
+
+.equals2:hover {
+  background-color: hsl(25, 96%, 50%);
+}
+
+.body-theme3 {
+  background-color: var(--main-bg3);
+  color: var(--text3);
+}
+
+.input-theme3 {
+  caret-color: var(--key3-btn-tg);
+  background-color: var(--scrn-bg3);
+  color: var(--text3);
+}
+
+.toggle-bg3 {
+  background-color: var(--keys3-bg);
+}
+
+.toggle3 {
+  background-color: var(--key3-btn-tg);
+}
+.keys-bg-theme3 {
+  background-color: var(--keys3-bg);
+}
+.keys-theme3 {
+  background-color: #331b4d;
+  color: var(--White-text3);
+  box-shadow: 0px 4px 0px 0px #881fa0;
+}
+.keys-theme3:hover {
+  background-color: #6b34ac;
+}
+
+.del-reset3 {
+  background-color: var(--del-reset3);
+  box-shadow: 0px 4px 0px 0px #bf15f4;
+}
+.del-reset3:hover {
+  background-color: #8631b0;
+}
+
+.equals3 {
+  background-color: var(--key3-btn-tg);
+  box-shadow: 0px 4px 0px 0px #6cf8ef;
+}
+
+.equals3:hover {
+  background-color: #94fff9;
+}
