@@ -5,6 +5,7 @@ body {
   color: var(--White-text1);
   font-family: "League Spartan", sans-serif;
   transition: 0.3s;
+  margin: 20px;
 }
 
 :root {
